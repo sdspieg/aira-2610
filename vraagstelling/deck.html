@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Van vage naar toetsbare vraag · AIRA · 13 oktober 2026</title>
-<meta name="description" content="Zero-content house deck shell. Splice slides into the #deck template.">
+<meta name="description" content="Van vage naar toetsbare vraag: HCSS-deck voor de AIRA-training, 13 oktober 2026.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap">
@@ -3391,6 +3391,31 @@ body.present #stage.on{padding:0!important}
 .vqw .vqw-decv{align-self:flex-start;background:#2a201b;border:1px solid rgba(224,149,106,.75);color:#f1d9c4;font-weight:700;font-size:1.4cqw;border-radius:3px;padding:.2cqw .6cqw}
 .vqw .vqw-g{display:flex;flex-direction:column;gap:.3cqw}
 
+/* ---- vq-yours ---- */
+/* vq-yours · the groups' own v1 questions (uploaded Monday 12 Oct) scored on the five tests */
+.vqy .ob-pic{aspect-ratio:1770/760;max-height:68cqh;margin-top:.6cqw;background:radial-gradient(ellipse at 35% 55%,#1d3c62 0%,#0d1f3c 72%)}
+.vqy p{margin:0}
+.vqy .sub .vqy-leg{white-space:nowrap;margin-left:.6cqw;color:#cfe0f0}
+.vqy .vqy-m{display:inline-block;flex:0 0 auto;width:1.05cqw;height:1.05cqw;border-radius:50%;box-sizing:border-box;border:2px solid #7fd08a;margin-right:.45cqw;vertical-align:-.1cqw}
+.vqy .vqy-m.vqy-full{background:#7fd08a}
+.vqy .vqy-m.vqy-half{border-color:#e8c26a;background:linear-gradient(90deg,#e8c26a 50%,transparent 50%)}
+.vqy .vqy-card{position:absolute;left:var(--x);top:0;width:32.4%;height:100%;box-sizing:border-box;background:#132f59;border:1px solid #2f5279;
+  border-top:4px solid #dbad50;border-radius:5px;padding:.7cqw .9cqw;display:flex;flex-direction:column;gap:.55cqw}
+.vqy .vqy-card.vqy-ph{height:42%;border:2px dashed #82a0bc;border-top:4px dashed #82a0bc;background:#11284b}
+.vqy .vqy-head{display:flex;align-items:center;gap:.7cqw}
+.vqy .vqy-ico{flex:0 0 auto;width:4.2cqw;height:3.36cqw}
+.vqy .vqy-g{color:#dbad50;font-weight:700;font-size:1.5cqw;line-height:1.15}
+.vqy .vqy-v{color:#9db8d6;font-size:1.3cqw;line-height:1.2}
+.vqy .vqy-v.vqy-phl{color:#e8c26a;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.vqy .vqy-q{color:#e8edf3;font-size:1.38cqw;line-height:1.3;font-style:italic;border-left:3px solid #2f5279;padding-left:.6cqw}
+.vqy .vqy-tests{display:flex;flex-direction:column;gap:.4cqw}
+.vqy .vqy-t{color:#e8edf3;font-size:1.3cqw;line-height:1.28;display:block}
+.vqy .vqy-t b{color:#cfe0f0;margin-right:.35cqw}
+.vqy .vqy-v2{margin-top:auto!important;color:#0d1f3c;background:#dbad50;border-radius:4px;padding:.45cqw .6cqw;font-size:1.3cqw;line-height:1.28}
+.vqy .vqy-v2 b{color:#0d1f3c}
+.vqy .vqy-pt{color:#e8edf3;font-size:1.35cqw;line-height:1.3}
+.vqy .ob-step .vqy-card{transition:none}
+
 /* ---- vq-exercise ---- */
 /* vq-exercise · four timed steps as a work card, a 25-minute timeline, then the output */
 .vqx .ob-pic{aspect-ratio:1770/760;max-height:68cqh;margin-top:.6cqw;background:radial-gradient(ellipse at 35% 55%,#1d3c62 0%,#0d1f3c 72%)}
@@ -3459,18 +3484,18 @@ body.present #stage.on{padding:0!important}
     <div class="h-right">
       
       
-      <a class="h-logo" href="https://rubase.org/" target="_blank" rel="noopener" title="RuBase dashboard"><img src="assets/logos/rubase_logo.svg" alt="RuBase"></a>
+      <a class="h-logo" href="https://rubase.org/" target="_blank" rel="noopener" title="RuBase-dashboard"><img src="assets/logos/rubase_logo.svg" alt="RuBase"></a>
     </div>
   </div>
   <div class="header-row2">
     <nav class="header-nav">
       <a href="../overview/deck.html#1">&larr; Weekoverzicht</a>
-      <button id="navHome" onclick="showHome()">Deck home</button>
-      <button id="navDeck" onclick="showDeck()">Slides</button>
+      <button id="navHome" onclick="showHome()">Startpagina</button>
+      <button id="navDeck" onclick="showDeck()">Dia&#8217;s</button>
       
-      <button onclick="present()" title="Full screen. Press F to toggle, Esc to exit.">Present &#x2922;</button>
+      <button onclick="present()" title="Volledig scherm. F schakelt aan en uit, Esc sluit af.">Presenteren &#x2922;</button>
       
-      <a href="https://rubase.org/" target="_blank" rel="noopener">RuBase dashboard</a>
+      <a href="https://rubase.org/" target="_blank" rel="noopener">RuBase-dashboard</a>
     </nav>
   </div>
 </header>
@@ -3483,14 +3508,14 @@ body.present #stage.on{padding:0!important}
 </div>
     <div class="prograil" id="prograil"></div>
   <div class="deckbar" id="deckbar"><a class="aira-ovback" href="../overview/deck.html#1" title="Terug naar het weekoverzicht">&#8962; Weekoverzicht</a>
-      <button onclick="go(cur-1)" aria-label="Previous slide">&larr;</button>
-      <button onclick="go(cur+1)" aria-label="Next slide">&rarr;</button>
+      <button onclick="go(cur-1)" aria-label="Vorige dia">&larr;</button>
+      <button onclick="go(cur+1)" aria-label="Volgende dia">&rarr;</button>
       <span id="counter"></span>
       <span id="slidetitle"></span><span id="buildpip"></span>
       <span class="spacer"></span>
-      <span id="keyhelp">&larr; &rarr; build/slide &#183; &uarr; &darr; section &#183; B builds off &#183; O overview &#183; N notes &#183; F present</span>
-      <button onclick="toggleNotes()">Notes</button>
-      <button onclick="present()" title="Full screen. Press F to toggle, Esc to exit.">Present &#x2922;</button>
+      <span id="keyhelp">&larr; &rarr; opbouw/dia &#183; &uarr; &darr; onderdeel &#183; B opbouw uit &#183; O overzicht &#183; N notities &#183; F presenteren</span>
+      <button onclick="toggleNotes()">Notities</button>
+      <button onclick="present()" title="Volledig scherm. F schakelt aan en uit, Esc sluit af.">Presenteren &#x2922;</button>
     </div>
     <div id="notes"></div>
   </main>
@@ -3575,7 +3600,7 @@ body.present #stage.on{padding:0!important}
 </div>
 </div>
 <img class="aira-logo" src="img/aira/hcss-logo/hcss-logo.jpg" alt="HCSS"></section>
-<section class="slide obuild vqlad" data-audience="all" data-n="DE VRAGENLADDER, ONGEVEER 8 MINUTEN. Bouw één sport per klik op. Het voorbeeld op de sporten is een ILLUSTRATIE die voor deze sessie is geschreven, over het thema afschrikking (hetzelfde thema als de CLAS-casus op de vorige slide); het is geen HCSS-onderzoeksvraag en geen bevinding. Zeg dat erbij. Het gaat om wat elke sport TOEVOEGT, niet om deze specifieke formulering. (1) ZORG: ‘Werkt de afschrikking van de NAVO op Rusland?’ Zo komen vragen binnen. Vraag de zaal: hoe zou een goed antwoord hierop eruitzien? Laat ze merken dat ze dat niet kunnen zeggen. Elk antwoord, ja of nee, klinkt aannemelijk. (2) ANALYTISCHE VRAAG: die noemt wiens blik en waarover. Voor een corpus van Russischtalige teksten is dat beslissend: je kunt bestuderen hoe Russische bronnen afschrikking ZIEN; of afschrikking WERKT, staat niet in de tekst (de volgende slide pakt dit op met de Transparent Battlefield-vraag). (3) ONDERZOEKSVRAAG: nu is er een afbakening (een periode, brontypen), een gedefinieerd object (vooruitgeschoven troepen op de oostflank) en een analyse-eenheid (de framing in een tekstfragment). De drie opties, dreiging, bluf of beperking, leggen de VORM van het antwoord al vast: een typologie met aandelen. De periode 2024–2025 is een illustratieve keuze. (4) DEELVRAGEN: drie, in hetzelfde format als maandag. Elk heeft een eigen antwoordvorm: een rangorde, een typologie, een vergelijking. (5) OBSERVEERBARE SIGNATUUR: wat zou er opduiken, in welke bronnen, hoe vaak en wanneer. Dit is de sport die een relevantieprompt fragment voor fragment kan toetsen, en ze vertelt je vooraf welke uitkomst je zou verrassen. Afsluiting: de meeste vragen die we krijgen, staan op sport 1 of 2; vanochtend tillen de groepen de hunne naar sport 5. Pauzeer voor vragen voordat je verdergaat." data-sec="craft" data-sid="vq-ladder" data-t="De vragenladder">
+<section class="slide obuild vqlad" data-audience="all" data-n="DE VRAGENLADDER, ONGEVEER 8 MINUTEN. Bouw één sport per klik op. Het voorbeeld op de sporten is een ILLUSTRATIE die voor deze sessie is geschreven, over het thema afschrikking (hetzelfde thema als de CLAS-casus op de vorige slide); het is geen HCSS-onderzoeksvraag en geen bevinding. Zeg dat erbij. Het gaat om wat elke sport TOEVOEGT, niet om deze specifieke formulering. (1) ZORG: ‘Werkt de afschrikking van de NAVO op Rusland?’ Zo komen vragen binnen. Vraag de zaal: hoe zou een goed antwoord hierop eruitzien? Laat ze merken dat ze dat niet kunnen zeggen. Elk antwoord, ja of nee, klinkt aannemelijk. (2) ANALYTISCHE VRAAG: die noemt wiens blik en waarover. Voor een corpus van Russischtalige teksten is dat beslissend: je kunt bestuderen hoe Russische bronnen afschrikking ZIEN; of afschrikking WERKT, staat niet in de tekst (de volgende slide pakt dit op met de Transparent Battlefield-vraag). (3) ONDERZOEKSVRAAG: nu is er een afbakening (een periode, brontypen), een gedefinieerd object (vooruitgeschoven troepen op de oostflank) en een analyse-eenheid (de framing in een tekstfragment). De drie opties, dreiging, bluf of beperking, leggen de VORM van het antwoord al vast: een typologie met aandelen. De periode 2024–2025 is een illustratieve keuze. (4) DEELVRAGEN: drie, in hetzelfde format als maandag. Elk heeft een eigen antwoordvorm: een rangorde, een typologie, een vergelijking. (5) OBSERVEERBARE SIGNATUUR: wat zou er opduiken, in welke bronnen, hoe vaak en wanneer. Dit is de sport die een relevantieprompt fragment voor fragment kan toetsen, en ze vertelt je vooraf welke uitkomst je zou verrassen. Afsluiting: de meeste vragen die we krijgen, staan op sport 1 of 2; vanochtend tillen de groepen de hunne naar sport 5. Pauzeer voor vragen voordat je verdergaat. Ter vergelijking: de geüploade v1 van de Effective Deterrence-groep staat al op sport 3 tot 4 (periode, kwartalen, geadresseerden, brontypen); dia 10 laat dat zien." data-sec="craft" data-sid="vq-ladder" data-t="De vragenladder">
 <h2>De vragenladder</h2>
 <p class="sub">Elke sport maakt de vraag concreter. <b class="vqlad-ill">Illustratie over het thema afschrikking, geschreven voor deze sessie.</b></p>
 <div class="ob-pic">
@@ -3688,7 +3713,7 @@ body.present #stage.on{padding:0!important}
 </div>
 </div>
 <img class="aira-logo" src="img/aira/hcss-logo/hcss-logo.jpg" alt="HCSS"></section>
-<section class="slide obuild vqt" data-audience="all" data-n="VIJF TOETSEN VOOR EEN ONDERZOEKSVRAAG (ongeveer 5 minuten; vijf klikken). Deze vijf toetsen zijn de checklist voor de oefening straks, en de volgende slide past ze toe op een echte HCSS-vraag, dus houd de namen en de volgorde vast: Afgebakend, Gedefinieerd, Observeerbaar, Vormgegeven, Verrasbaar. De rode draad, die in elk uitlegblok staat: een taalmodel zegt nooit ‘je vraag is onduidelijk’. Het vult elk gat dat je laat met zijn eigen standaardaanname, vloeiend, en je ziet niet welke aanname het koos. Elke toets dicht één soort gat. KLIK 1, AFGEBAKEND: welke periode, welke brontypen, welke actoren. Zonder die drie antwoordt het model over ‘Rusland’ in het algemeen, vanuit wat in zijn trainingsdata toevallig oververtegenwoordigd is. KLIK 2, GEDEFINIEERD: de kernbegrippen, en ook hun Russische equivalenten, want de bronnen zijn Russisch en hetzelfde Nederlandse of Engelse woord kan op meerdere Russische woorden slaan (we komen op een latere slide terug op afschrikking). KLIK 3, OBSERVEERBAAR: het antwoord moet zichtbaar worden in tekst die echt in je corpus zit. Dit is het punt van de vorige slides, omgezet in een toets. KLIK 4, VORMGEGEVEN: je kent de vorm van het antwoord voordat je vraagt: telling, trend, vergelijking, typologie, rangorde. KLIK 5, VERRASBAAR: het antwoord kan tegen je verwachting in uitvallen. Als elke mogelijke uitkomst je beeld bevestigt, kan de vraag je niets leren, en een model dat geneigd is je gelijk te geven (maandag: jaknikken, sycophancy) maakt het erger. VRAAG DE ZAAL: neem de v1 van je groep van gisteren; voor welke van de vijf zakt hij het eerst? Neem één antwoord per groep; repareer het nog niet, dat is de oefening. De pictogrammen zijn platte tekeningen in één stijl." data-sec="craft" data-sid="vq-tests" data-t="Vijf toetsen voor een onderzoeksvraag">
+<section class="slide obuild vqt" data-audience="all" data-n="VIJF TOETSEN VOOR EEN ONDERZOEKSVRAAG (ongeveer 5 minuten; vijf klikken). Deze vijf toetsen zijn de checklist voor de oefening straks, en de volgende slide past ze toe op een echte HCSS-vraag, dus houd de namen en de volgorde vast: Afgebakend, Gedefinieerd, Observeerbaar, Vormgegeven, Verrasbaar. De rode draad, die in elk uitlegblok staat: een taalmodel zegt nooit ‘je vraag is onduidelijk’. Het vult elk gat dat je laat met zijn eigen standaardaanname, vloeiend, en je ziet niet welke aanname het koos. Elke toets dicht één soort gat. KLIK 1, AFGEBAKEND: welke periode, welke brontypen, welke actoren. Zonder die drie antwoordt het model over ‘Rusland’ in het algemeen, vanuit wat in zijn trainingsdata toevallig oververtegenwoordigd is. KLIK 2, GEDEFINIEERD: de kernbegrippen, en ook hun Russische equivalenten, want de bronnen zijn Russisch en hetzelfde Nederlandse of Engelse woord kan op meerdere Russische woorden slaan (we komen op een latere slide terug op afschrikking). KLIK 3, OBSERVEERBAAR: het antwoord moet zichtbaar worden in tekst die echt in je corpus zit. Dit is het punt van de vorige slides, omgezet in een toets. KLIK 4, VORMGEGEVEN: je kent de vorm van het antwoord voordat je vraagt: telling, trend, vergelijking, typologie, rangorde. KLIK 5, VERRASBAAR: het antwoord kan tegen je verwachting in uitvallen. Als elke mogelijke uitkomst je beeld bevestigt, kan de vraag je niets leren, en een model dat geneigd is je gelijk te geven (maandag: jaknikken, sycophancy) maakt het erger. VRAAG DE ZAAL: neem de v1 van je groep van gisteren; voor welke van de vijf zakt hij het eerst? Neem één antwoord per groep; repareer het nog niet, dat is de oefening. De pictogrammen zijn platte tekeningen in één stijl. Dia 10 (Jullie v1, langs de vijf toetsen) past ze toe op de vragen die de groepen maandag uploadden." data-sec="craft" data-sid="vq-tests" data-t="Vijf toetsen voor een onderzoeksvraag">
 <h2>Vijf toetsen voor een onderzoeksvraag</h2>
 <p class="sub">Elk gat dat je laat, vult een taalmodel met zijn eigen standaardaanname.</p>
 <div class="ob-pic">
@@ -3808,7 +3833,50 @@ body.present #stage.on{padding:0!important}
 </div>
 </div>
 <img class="aira-logo" src="img/aira/hcss-logo/hcss-logo.jpg" alt="HCSS"></section>
-<section class="slide obuild vqx" data-audience="all" data-n="OEFENING, 25 MINUTEN IN DE DRIE GROEPEN (ongeveer 6 personen per groep). Jesse bewaakt de tijd; Stephan loopt rond. Bouw al uitleggend één stap per klik op en laat de slide daarna de hele oefening op de eindstand staan. Elke groep werkt aan de eigen geërfde studie en dataset: Transparent Battlefield, Grey‑Zone Warfare of Effective Deterrence. STAP 1, 5 MINUTEN: pak de onderzoeksvraag v1 en haar drie deelvragen van de projectkick-off van maandag 15:00. Begin niet opnieuw; het leereffect zit in zien wat de toetsen veranderen aan een vraag die de groep al bezit. STAP 2, 10 MINUTEN, DE LANGSTE: loop de vijf toetsen van eerder in deze sessie in volgorde langs: Afgebakend, Gedefinieerd, Observeerbaar, Vormgegeven, Verrasbaar. Pas ze toe op de hoofdvraag en op elke deelvraag, en herschrijf. Elke gezakte toets is een gat dat het model met zijn eigen standaardaanname zou vullen. Kan een toets nog niet gehaald worden (bijvoorbeeld omdat niemand weet welke brontypen de dataset bevat), schrijf dat dan op als open punt in plaats van te gokken. Herinner de Effective Deterrence-groep aan het vertaalpunt van de vorige slide. STAP 3, 5 MINUTEN: schrijf per deelvraag de vorm van het antwoord op (telling, trend, vergelijking, typologie of rangorde), één voorbeeld van een goed antwoord, en één antwoord dat de groep zou afwijzen, met de reden. Dit is de ex-ante-evaluatie: de meetlat bestaat voordat het model spreekt. De goede en slechte antwoorden zijn van de groep zelf; ze hoeven nog niet waar te zijn, alleen herkenbaar. STAP 4, 5 MINUTEN: zet drie tot vijf relevantiecriteria op een rij waaraan een fragment moet voldoen om de deelvragen te helpen beantwoorden. Schrijf ze zo dat iemand buiten de groep ze kan toepassen, want om 13:00 worden ze de relevantieprompt. VRAAG TIJDENS HET RONDLOPEN: welke van je deelvragen kan het corpus niet beantwoorden? Welk woord in je vraag zou een Russische bron anders gebruiken? Welk antwoord zou je verrassen? AAN HET EIND (5 seconden per groep is genoeg): elke groep leest de hoofdvraag v2 hardop voor; nu geen discussie, de overdrachtsslide volgt. OUTPUT: wat de groep meeneemt naar 13:00." data-sec="do" data-sid="vq-exercise" data-t="Jullie beurt: van v1 naar v2">
+<section class="slide obuild vqy" data-audience="all" data-n="JULLIE V1, LANGS DE VIJF TOETSEN (ongeveer 4 minuten; drie klikken), vlak voor de oefening. Bron: de onderzoeksvragen die de groepen maandag op het onderwijsplatform uploadden (Groepsproject, ‘Van de groep’). Dit zijn concepten van deelnemers: presenteer ze als ‘zo scherp je verder aan’, nooit als kritiek, en noem op de slide geen namen. KLIK 1, EFFECTIVE DETERRENCE (geüpload door Sanne): de hoofdvraag staat letterlijk op de slide; de deelvragen gaan over typen nucleaire signalen per geadresseerde (DV1), de uitgedrukte geloofwaardigheid van de afschrikking, zoals bluf, reëel risico of expliciete afschrikking (DV2), en verschillen tussen officiële, militair-expert- en informele bronnen (DV3). Complimenteer de groep expliciet: ze hebben zelf ‘Russische inschatting’ vervangen door ‘representatie’, omdat de bronnen uitspraken doen en geen toegang geven tot wat Moskou werkelijk gelooft. Dat is precies de toets Observeerbaar. Wat nog open ligt: wat telt als ‘nucleair signaal’ en als ‘expliciet’, ook in het Russisch (bijvoorbeeld ядерное сдерживание en de signaalwoorden rond kernwapens), welke vorm elk antwoord krijgt, en welke uitkomst hen zou verrassen (bijvoorbeeld als Europese NAVO-staten vaker doelwit zijn dan de VS). KLIK 2, TRANSPARENT BATTLEFIELD: in de groep liggen vier varianten, van Johannes (innovatie-ecosysteem en wat Defensie ervan kan leren), Klaas (officieel versus Telegram, 2014–2026, kill chain), Leo (de Nederlandse versie op de slide: divergentie tussen officiële bronnen en milbloggers, met een divergentiescore) en een vierde concept over de cyclus van maatregel en tegenmaatregel bij drones. Drie van de vier delen de rode draad officieel tegenover milbloggers: dat is een goed vertrekpunt om er samen één te kiezen. Het vierde concept eindigt nog met de zin ‘I can work this into a one-page research proposal with a hypothesis, or draft the classification prompt’: onbewerkte chatbottekst. Die zin staat bewust NIET op de slide; de slide zegt alleen in het algemeen dat je restjes modeltekst uit een concept haalt. Noem de zin hooguit als de groep er zelf ontspannen over is, en wijs nooit iemand aan: het is herkenbaar, en het laat zien dat modeltekst een concept is en nog geen eigen vraag. Inhoudelijk: ‘lessen voor westerse commandanten’ en ‘wat Defensie kan overnemen’ staan niet in een corpus van Russische teksten; houd ze als duiding achteraf. KLIK 3, GREY-ZONE WARFARE: het geüploade document (een pdf van Bram) kon vannacht niet worden opgehaald; de kaart is een gemarkeerde plaatshouder. Vraag de groep hun v1 even voor te lezen en verwijs naar de uitgewerkte aanscherping op dia 8, die over hun thema gaat. Overgang: in de oefening doet elke groep precies dit met de eigen v1." data-sec="do" data-sid="vq-yours" data-t="Jullie v1, langs de vijf toetsen">
+<h2>Jullie v1, langs de vijf toetsen</h2>
+<p class="sub">De onderzoeksvragen die jullie maandag uploadden: concepten, ter bespreking. <span class="vqy-leg"><span class="vqy-m vqy-full"></span>voldoet</span> <span class="vqy-leg"><span class="vqy-m vqy-half"></span>deels: zo scherp je verder aan</span></p>
+<div class="ob-pic">
+<div class="ob-step" data-frag="1">
+<div class="vqy-card" style="--x:0%">
+<div class="vqy-head"><svg aria-label="Een schild: Effective Deterrence" class="vqy-ico" viewbox="0 0 100 80"><style>.vqy-i1b{fill:#82a0bc}.vqy-i1s{stroke:#0d1f3c;stroke-width:5;fill:none;stroke-linejoin:round;stroke-linecap:round}</style><rect class="vqy-i1b" height="80" rx="6" width="100" x="0" y="0"></rect><path class="vqy-i1s" d="M50 10 L76 20 V40 C76 56 64 66 50 72 C36 66 24 56 24 40 V20 Z M38 40 L47 49 L63 31"></path></svg><div><p class="vqy-g">Effective Deterrence</p><p class="vqy-v">v1 van maandag</p></div></div>
+<p class="vqy-q">“Hoe ontwikkelden zich in de periode februari 2022 tot en met december 2025, per kwartaal, de Russische nucleaire signalen richting de VS, Europese NAVO-staten en de NAVO als bondgenootschap, en de Russische representatie van de afschrikking van elk van deze partijen?”</p>
+<div class="vqy-tests">
+<p class="vqy-t"><span class="vqy-m vqy-full"></span><b>Afgebakend</b> periode, kwartalen, drie geadresseerden, drie brontypen</p>
+<p class="vqy-t"><span class="vqy-m vqy-half"></span><b>Gedefinieerd</b> wat telt als ‘nucleair signaal’, ook in het Russisch?</p>
+<p class="vqy-t"><span class="vqy-m vqy-full"></span><b>Observeerbaar</b> ‘representatie’, niet ‘inschatting’: sterk</p>
+<p class="vqy-t"><span class="vqy-m vqy-half"></span><b>Vormgegeven</b> trend per kwartaal; vorm per deelvraag nog vastleggen</p>
+<p class="vqy-t"><span class="vqy-m vqy-half"></span><b>Verrasbaar</b> welke uitkomst zou jullie verrassen?</p>
+</div>
+<p class="vqy-v2"><b>v2-stap:</b> definieer ‘nucleair signaal’ en ‘expliciet’ met de Russische signaalwoorden, en noteer per deelvraag een verrassende uitkomst.</p>
+</div>
+<div class="ob-note" style="--x:34.2%;--y:2%;--w:63.8%"><div class="k">Effective Deterrence: al ver op de ladder</div><div class="d">Jullie v1 heeft een periode, een ritme per kwartaal, drie geadresseerden en drie brontypen. En ‘representatie’ in plaats van ‘inschatting’ houdt de vraag binnen wat het corpus kan laten zien. Zo scherp je verder aan: definieer de kernbegrippen, en schrijf op wat jullie zou verrassen.</div></div>
+</div>
+<div class="ob-step" data-frag="1">
+<div class="vqy-card" style="--x:33.8%">
+<div class="vqy-head"><svg aria-label="Een oog boven een slagveld: Transparent Battlefield" class="vqy-ico" viewbox="0 0 100 80"><style>.vqy-i2b{fill:#82a0bc}.vqy-i2s{stroke:#0d1f3c;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.vqy-i2f{fill:#0d1f3c}</style><rect class="vqy-i2b" height="80" rx="6" width="100" x="0" y="0"></rect><path class="vqy-i2s" d="M20 30 C34 14 66 14 80 30 C66 46 34 46 20 30 Z M14 66 H86 M26 66 L34 56 L42 66 M58 66 L66 54 L74 66"></path><circle class="vqy-i2f" cx="50" cy="30" r="7"></circle></svg><div><p class="vqy-g">Transparent Battlefield</p><p class="vqy-v">v1 van maandag · één van vier varianten</p></div></div>
+<p class="vqy-q">“In welke mate liepen de beoordelingen van UAS-gedreven transparantie van het slagveld door Russische officiële militaire bronnen en frontlinie-milbloggers uiteen tussen februari 2022 en maart 2026, en welke lessen bieden deze verschillen voor westerse militaire commandanten?”</p>
+<div class="vqy-tests">
+<p class="vqy-t"><span class="vqy-m vqy-full"></span><b>Afgebakend</b> periode, twee brongroepen, vijf dimensies</p>
+<p class="vqy-t"><span class="vqy-m vqy-half"></span><b>Gedefinieerd</b> ‘UAS-gedreven transparantie’ en ‘uiteenlopen’ nog uitschrijven</p>
+<p class="vqy-t"><span class="vqy-m vqy-half"></span><b>Observeerbaar</b> ‘lessen voor commandanten’ staan niet in het corpus</p>
+<p class="vqy-t"><span class="vqy-m vqy-full"></span><b>Vormgegeven</b> divergentiescore per dimensie en periode</p>
+<p class="vqy-t"><span class="vqy-m vqy-full"></span><b>Verrasbaar</b> bronnen kunnen ook naar elkaar toe groeien</p>
+</div>
+<p class="vqy-v2"><b>v2-stap:</b> kies samen één variant, definieer ‘uiteenlopen’, en houd de lessen voor commandanten als duiding achteraf.</p>
+</div>
+<div class="ob-note" style="--x:67.6%;--y:2%;--w:32.4%"><div class="k">Vier varianten, één vraag kiezen</div><div class="d">In de groep liggen vier versies; drie delen de rode draad officiële bronnen tegenover milbloggers. Kies er samen één. En haal restjes modeltekst uit een concept: een chatbot levert een opzet, nog geen eigen vraag.</div></div>
+</div>
+<div class="ob-step" data-frag="1">
+<div class="vqy-card vqy-ph" style="--x:67.6%">
+<div class="vqy-head"><svg aria-label="Een grijs vlak met een vraagteken: Grey-Zone Warfare, plaatshouder" class="vqy-ico" viewbox="0 0 100 80"><style>.vqy-i3b{fill:#82a0bc}.vqy-i3s{stroke:#0d1f3c;stroke-width:5;fill:none;stroke-linecap:round;stroke-dasharray:7 6}.vqy-i3t{fill:#0d1f3c;font:700 34px 'Titillium Web',sans-serif}</style><rect class="vqy-i3b" height="80" rx="6" width="100" x="0" y="0"></rect><rect class="vqy-i3s" height="56" rx="4" width="68" x="16" y="12"></rect><text class="vqy-i3t" x="42" y="52">?</text></svg><div><p class="vqy-g">Grey-Zone Warfare</p><p class="vqy-v vqy-phl">plaatshouder · v1 volgt</p></div></div>
+<p class="vqy-pt">Jullie geüploade document kon vannacht nog niet worden opgehaald. Lees jullie v1 zo even voor; de uitgewerkte aanscherping op dia 8 gaat over jullie thema.</p>
+</div>
+<div class="ob-note" style="--x:67.6%;--y:47%;--w:32.4%"><div class="k">Nu jullie eigen v1</div><div class="d">Leg jullie v1 naast de vijf toetsen, zoals hier. Wat al voldoet, laat je staan; wat deels voldoet, scherp je aan in de oefening.</div></div>
+</div>
+</div>
+<img class="aira-logo" src="img/aira/hcss-logo/hcss-logo.jpg" alt="HCSS"></section>
+<section class="slide obuild vqx" data-audience="all" data-n="OEFENING, 25 MINUTEN IN DE DRIE GROEPEN (ongeveer 6 personen per groep). Jesse bewaakt de tijd; Stephan loopt rond. Bouw al uitleggend één stap per klik op en laat de slide daarna de hele oefening op de eindstand staan. Elke groep werkt aan de eigen geërfde studie en dataset: Transparent Battlefield, Grey‑Zone Warfare of Effective Deterrence. STAP 1, 5 MINUTEN: pak de geüploade onderzoeksvraag v1 (de vorige dia toont hoe ze scoort op de vijf toetsen; Grey Zone leest de eigen v1 voor) en haar drie deelvragen van de projectkick-off van maandag 15:00. Begin niet opnieuw; het leereffect zit in zien wat de toetsen veranderen aan een vraag die de groep al bezit. STAP 2, 10 MINUTEN, DE LANGSTE: loop de vijf toetsen van eerder in deze sessie in volgorde langs: Afgebakend, Gedefinieerd, Observeerbaar, Vormgegeven, Verrasbaar. Pas ze toe op de hoofdvraag en op elke deelvraag, en herschrijf. Elke gezakte toets is een gat dat het model met zijn eigen standaardaanname zou vullen. Kan een toets nog niet gehaald worden (bijvoorbeeld omdat niemand weet welke brontypen de dataset bevat), schrijf dat dan op als open punt in plaats van te gokken. Herinner de Effective Deterrence-groep aan het vertaalpunt van de vorige slide. STAP 3, 5 MINUTEN: schrijf per deelvraag de vorm van het antwoord op (telling, trend, vergelijking, typologie of rangorde), één voorbeeld van een goed antwoord, en één antwoord dat de groep zou afwijzen, met de reden. Dit is de ex-ante-evaluatie: de meetlat bestaat voordat het model spreekt. De goede en slechte antwoorden zijn van de groep zelf; ze hoeven nog niet waar te zijn, alleen herkenbaar. STAP 4, 5 MINUTEN: zet drie tot vijf relevantiecriteria op een rij waaraan een fragment moet voldoen om de deelvragen te helpen beantwoorden. Schrijf ze zo dat iemand buiten de groep ze kan toepassen, want om 13:00 worden ze de relevantieprompt. VRAAG TIJDENS HET RONDLOPEN: welke van je deelvragen kan het corpus niet beantwoorden? Welk woord in je vraag zou een Russische bron anders gebruiken? Welk antwoord zou je verrassen? AAN HET EIND (5 seconden per groep is genoeg): elke groep leest de hoofdvraag v2 hardop voor; nu geen discussie, de overdrachtsslide volgt. OUTPUT: wat de groep meeneemt naar 13:00." data-sec="do" data-sid="vq-exercise" data-t="Jullie beurt: van v1 naar v2">
 <h2>Jullie beurt: van v1 naar v2</h2>
 <p class="sub">25 minuten, in je groep, op de studie die je hebt geërfd: Transparent Battlefield, Grey‑Zone Warfare of Effective Deterrence.</p>
 <div class="ob-pic">
@@ -3817,10 +3885,10 @@ body.present #stage.on{padding:0!important}
 <div class="vqx-row" style="--y:12%">
 <span class="vqx-num">1</span>
 <svg aria-label="Een document met v1: de vraag van maandag" class="vqx-ico" viewbox="0 0 100 80"><style>.vqx-i1b{fill:#82a0bc}.vqx-i1s{stroke:#0d1f3c;stroke-width:4.5;fill:none;stroke-linecap:round;stroke-linejoin:round}.vqx-i1t{fill:#0d1f3c;font-size:22px;font-weight:700;font-family:sans-serif}</style><rect class="vqx-i1b" height="80" rx="6" width="100" x="0" y="0"></rect><path class="vqx-i1s" d="M26 10 H62 L74 22 V70 H26 Z M62 10 V22 H74 M34 50 H66 M34 60 H58"></path><text class="vqx-i1t" x="34" y="41">v1</text></svg>
-<div class="vqx-body"><p class="vqx-t">Pak de v1 van maandag</p><p class="vqx-d">Je onderzoeksvraag en haar drie deelvragen, zoals je ze bij de kick‑off achterliet.</p></div>
+<div class="vqx-body"><p class="vqx-t">Pak de v1 van maandag</p><p class="vqx-d">Jullie v1 van maandag en haar drie deelvragen, zoals jullie ze uploadden.</p></div>
 <span class="vqx-chip">5 min</span>
 </div>
-<div class="ob-note" style="--x:68%;--y:0%;--w:32%"><div class="k">1 · Begin bij wat je hebt</div><div class="d">Pak de onderzoeksvraag die je groep maandag schreef, met haar drie deelvragen. Begin niet opnieuw: het gaat erom te zien wat de toetsen veranderen aan een vraag die al van jullie is.</div></div>
+<div class="ob-note" style="--x:68%;--y:0%;--w:32%"><div class="k">1 · Begin bij wat je hebt</div><div class="d">Pak de v1 die je groep maandag uploadde, met haar drie deelvragen; de vorige dia liet zien hoe die scoort (Grey Zone: lees de eigen v1 voor). Begin niet opnieuw: het gaat erom te zien wat de toetsen veranderen aan een vraag die al van jullie is.</div></div>
 </div>
 <div class="ob-step" data-frag="1">
 <div class="vqx-seg" style="--x:13.48%;--w:25.96%"><span class="vqx-sn">2</span>min 5–15</div>
@@ -4146,7 +4214,7 @@ function toggleBuild(){
 function go(i,push,built){ if(i<0)i=0;if(i>=slides.length)i=slides.length-1; /* set the incoming slide's fragment state BEFORE it becomes visible: otherwise a slide that still carries .shown from a previous build paints fully built for a few frames and then collapses - the 'ghosting' flash. */ setFrags(i, (buildOff || built===true) ? frags(i).length : 0); slides[cur].classList.remove('on'); cur=i; slides[cur].classList.add('on'); autofit(cur); setFrags(cur, (buildOff || built===true) ? frags(cur).length : 0);
   document.getElementById('counter').textContent=(cur+1)+' / '+slides.length;
   document.getElementById('slidetitle').innerHTML=slides[cur].dataset.t||'';
-  document.getElementById('notes').innerHTML=slides[cur].dataset.n?('<b>Note</b> &nbsp;'+slides[cur].dataset.n):'<i>No note on this slide.</i>';
+  document.getElementById('notes').innerHTML=slides[cur].dataset.n?('<b>Notitie</b> &nbsp;'+slides[cur].dataset.n):'<i>Geen notitie bij deze dia.</i>';
   paintTimeline();paintSidebar();
   if(push!==false)history.replaceState(null,'','#'+(cur+1));
 }
@@ -4205,7 +4273,7 @@ function paintTimeline(){
       h+='<button class="timeline-block" data-d="'+(k+1)+'" onclick="goDay('+(k+1)+')">'+
          '<div class="timeline-time">'+d.label+' &#183; '+d.mins+' min</div>'+
          '<div class="timeline-label">'+d.title+'</div>'+
-         '<div class="timeline-duration">'+(d.count?d.count+(d.count===1?' slide':' slides'):'not yet built')+'</div></button>';
+         '<div class="timeline-duration">'+(d.count?d.count+(d.count===1?' dia':' dia&#8217;s'):'nog niet gebouwd')+'</div></button>';
     });
     bar.innerHTML=h;bar.dataset.built='1';
   }
@@ -4216,15 +4284,15 @@ function paintTimeline(){
 function paintSidebar(){
   var sb=document.getElementById('sidebar'),h='';
   if(view==='home'){
-    h+='<div class="sidebar-section"><div class="sidebar-section-title">The talk</div>';
+    h+='<div class="sidebar-section"><div class="sidebar-section-title">De sessie</div>';
     DAYS.forEach(function(d,k){
       h+='<button class="sidebar-item" onclick="goDay('+(k+1)+')"><span class="sidebar-item-title">'+
-         d.label+' &#183; '+d.title+'</span><span class="sidebar-badge">'+(d.count?d.count+(d.count===1?' slide':' slides'):'empty')+'</span></button>';});
+         d.label+' &#183; '+d.title+'</span><span class="sidebar-badge">'+(d.count?d.count+(d.count===1?' dia':' dia&#8217;s'):'leeg')+'</span></button>';});
     h+='</div><div class="sidebar-section"><div class="sidebar-section-title">Deck</div>'+
-       '<button class="sidebar-item" onclick="showDeck(0)"><span class="sidebar-item-title">Open from the start</span><span class="sidebar-badge">'+slides.length+'</span></button>'+
-       '<button class="sidebar-item" onclick="toggleOv()"><span class="sidebar-item-title">Slide overview</span><span class="sidebar-badge">O</span></button>'+
-       '<button class="sidebar-item" onclick="present()"><span class="sidebar-item-title">Present full screen</span><span class="sidebar-badge">F</span></button></div>'+
-       '<div class="sidebar-section"><div class="sidebar-section-title">Reference</div>'+'<a class="sidebar-item" href="https://rubase.org/" target="_blank" rel="noopener"><span class="sidebar-item-title">RuBase dashboard</span><span class="sidebar-badge">&#8599;</span></a>'+'<a class="sidebar-item" href="https://rubasediscovery.app.hcss.nl/sources" target="_blank" rel="noopener"><span class="sidebar-item-title">RuBase sources overview</span><span class="sidebar-badge">&#8599;</span></a>'+'<a class="sidebar-item" href="https://onderwijsophcss.app.hcss.nl" target="_blank" rel="noopener"><span class="sidebar-item-title">Training platform</span><span class="sidebar-badge">&#8599;</span></a>'+'</div>';
+       '<button class="sidebar-item" onclick="showDeck(0)"><span class="sidebar-item-title">Vanaf het begin</span><span class="sidebar-badge">'+slides.length+'</span></button>'+
+       '<button class="sidebar-item" onclick="toggleOv()"><span class="sidebar-item-title">Overzicht van de dia&#8217;s</span><span class="sidebar-badge">O</span></button>'+
+       '<button class="sidebar-item" onclick="present()"><span class="sidebar-item-title">Volledig scherm presenteren</span><span class="sidebar-badge">F</span></button></div>'+
+       '<div class="sidebar-section"><div class="sidebar-section-title">Naslag</div>'+'<a class="sidebar-item" href="https://rubase.org/" target="_blank" rel="noopener"><span class="sidebar-item-title">RuBase-dashboard</span><span class="sidebar-badge">&#8599;</span></a>'+'<a class="sidebar-item" href="https://rubasediscovery.app.hcss.nl/sources" target="_blank" rel="noopener"><span class="sidebar-item-title">Overzicht RuBase-bronnen</span><span class="sidebar-badge">&#8599;</span></a>'+'<a class="sidebar-item" href="https://onderwijsophcss.app.hcss.nl" target="_blank" rel="noopener"><span class="sidebar-item-title">Trainingsplatform</span><span class="sidebar-badge">&#8599;</span></a>'+'</div>';
     sb.innerHTML=h;return;
   }
   var d=dayOf(cur);
@@ -4238,11 +4306,11 @@ function paintSidebar(){
        '<span class="sidebar-item-title">'+(slides[i].dataset.t||('Slide '+(i+1)))+'</span>'+
        '<span class="sidebar-badge">'+(i+1)+'</span></button>';
   }
-  h+='</div><div class="sidebar-section"><div class="sidebar-section-title">Jump to a section</div>';
+  h+='</div><div class="sidebar-section"><div class="sidebar-section-title">Naar een onderdeel</div>';
   DAYS.forEach(function(dd,k){
     h+='<button class="sidebar-item'+(k+1===d?' active':'')+'" onclick="goDay('+(k+1)+')">'+
        '<span class="sidebar-item-title">'+dd.label+' &#183; '+dd.title+'</span>'+
-       '<span class="sidebar-badge">'+(dd.count?dd.count+(dd.count===1?' slide':' slides'):'empty')+'</span></button>';});
+       '<span class="sidebar-badge">'+(dd.count?dd.count+(dd.count===1?' dia':' dia&#8217;s'):'leeg')+'</span></button>';});
   h+='</div>';
   sb.innerHTML=h;
   var act=sb.querySelector('.sidebar-item.active');
@@ -4259,7 +4327,7 @@ function buildHome(){
   DAYS.forEach(function(d,k){
     h+='<button class="session-card'+(d.count?'':' empty')+'" onclick="goDay('+(k+1)+')">'+
        '<div class="card-num">'+(k+1)+'</div>'+
-       '<div class="card-time">'+d.label+' &#183; '+d.mins+' min'+(d.count?' &#183; '+d.count+(d.count===1?' slide':' slides'):'')+'</div>'+
+       '<div class="card-time">'+d.label+' &#183; '+d.mins+' min'+(d.count?' &#183; '+d.count+(d.count===1?' dia':' dia&#8217;s'):'')+'</div>'+
        '<div class="card-title">'+d.title+'</div>'+
        '<div class="card-desc">'+d.desc+'</div><div class="card-items">';
     d.items.forEach(function(it){h+='<div class="card-item"><span class="card-item-bullet"></span><span>'+it+'</span></div>';});
